@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-color: blue;
+}
+
+.header {
+  width: 100vw;
+  height: 7vh;
+  background-color: antiquewhite;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+.header-left {
+  width: 20vw;
+  height: 5vh;
+
+  left: 0;
+}
+.header-main {
+  width: 80vw;
+  height: 5vh;
+  margin-top: 10px;
+}
+.header-main a {
+  color: darkgoldenrod;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+  border-radius: 3px;
+}
+.logo {
+  font-family: Arial, sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: palevioletred;
+  position: relative;
+  text-align: center;
+  animation: bounce 1s infinite alternate;
+  margin-left: -5px;
+}
+
+.logo-lower {
+  font-size: 0.8em;
+  margin-top: 8px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 2%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 18px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main {
+  width: 100vw;
+  height: 90vh;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+}
+.email-form {
+  width: 33vw;
+  height: 50vh;
+  background-color: darkcyan;
+  padding: 30px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+h3 {
+  color: aliceblue;
+  margin-top: 20px;
+}
+
+input {
+  border-radius: 3px;
+  border: 2px solid black;
+  width: calc(100% - 70px);
+  height: 30px;
+  margin: 10px 0;
+}
+
+.footer_Sign_btn {
+  background-color: blue;
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+
+.details {
+  width: 33vw;
+  height: 50vh;
+  background-color: aliceblue;
+  padding: 30px;
+}
+.office p {
+  height: 30px;
+  margin: 10px 0;
+  color: black;
+}
+.Explore {
+  width: 33vw;
+  background-color: firebrick;
+  padding: 30px;
+}
+.Explore .vl {
+  border-left: 1px solid;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+.Explore_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.Explore_div a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 5px 0;
+}
